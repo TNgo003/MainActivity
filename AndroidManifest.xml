@@ -40,6 +40,10 @@
             android:name="com.firebase.androidchat.LanguageActivity"
             android:label="@string/title_activity_language" >
         </activity>
+         <activity
+            android:name="com.firebase.androidchat.TabbedSwipeActivity"
+            android:label="@string/title_activity_tabbed_swipe" >
+        </activity>
     </application>
 
 </manifest>

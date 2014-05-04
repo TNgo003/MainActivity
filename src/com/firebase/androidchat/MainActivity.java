@@ -17,7 +17,7 @@ import java.util.Random;
 public class MainActivity extends ListActivity {
 
     // TODO: change this to your own Firebase URL
-    private static final String FIREBASE_URL = "https://android-chat.firebaseIO-demo.com";
+    private static final String FIREBASE_URL = "https://sy8rgd1ejla.firebaseio-demo.com/";
 
     private String username;
     private Firebase ref;
@@ -118,7 +118,7 @@ public class MainActivity extends ListActivity {
             // Create our 'model', a Chat object
             Chat chat = new Chat(input, username);
             // Create a new, auto-generated child of that chat location, and save our chat data there
-            //ref.push().setValue(chat);
+            ref.push().setValue(chat);
             inputText.setText("");
         }
     }

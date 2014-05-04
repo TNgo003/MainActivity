@@ -89,7 +89,7 @@ public class LoginActivity extends Activity {
 				new View.OnClickListener() {
 					@Override
 					public void onClick(View view) {
-						Intent i = new Intent(getApplicationContext(), SignUpActivity.class);
+						Intent i = new Intent(getApplicationContext(), TabbedSwipeActivity.class);
 						startActivity(i);
 					}
 				});

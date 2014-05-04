@@ -3,6 +3,7 @@ package com.firebase.androidchat;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -43,6 +44,7 @@ public class ChatListAdapter extends FirebaseListAdapter<Chat> {
         String author = chat.getAuthor();
         TextView authorText = (TextView)view.findViewById(R.id.author);
         ImageView image = (ImageView) view.findViewById(R.id.pic2);
+        Log.d("WORDS", chat.getMessage());
         authorText.setText(author + ": ");
         // If the message was sent by this user, color it differently
         if(author == null)
